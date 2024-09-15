@@ -9,8 +9,10 @@ export function Home() {
   const navigation = useNavigation();
 
   async function handleGithubUserSearch() {
-    if (githubUser.length === 0)
+    if (githubUser.length === 0) {
       alert("Campo de pesquisa deve ser preenchido.");
+      return;
+    }
 
     try {
       const response = await api.get(`/users/${githubUser}`);

@@ -9,46 +9,55 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   projectName: {
-    color: '#FFF',
-    fontSize: 32,
+    color: '#31CF67',
+    fontSize: 36,
     fontWeight: 'bold',
-    marginBottom: 16
+    marginBottom: 16,
+    textShadowColor: '#000',
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 6,
   },
   title: {
     color: '#FFF',
     fontSize: 24,
-    fontWeight: 'bold',
-    marginTop: 48
-  },
-  text: {
-    color: "#fff",
+    fontWeight: '600',
+    marginBottom: 32,
+    textAlign: 'center',
   },
   input: {
     backgroundColor: '#1F1E25',
-    borderRadius: 5,
+    borderRadius: 8,
     color: '#FFFF',
     padding: 16,
     fontSize: 16,
-    marginRight: 12
+    flex: 1,
+    marginRight: 12,
+    borderWidth: 1,
+    borderColor: '#31CF67',
   },
   button: {
-    width: 56,
-    height: 56,
-    borderRadius: 5,
+    width: 120,
+    height: 50,
+    borderRadius: 8,
     backgroundColor: '#31CF67',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    elevation: 4,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
   },
   buttonText: {
     color: '#FFF',
-    fontSize: 15
+    fontSize: 18,
+    fontWeight: 'bold',
   },
   form: {
     width: '100%',
     flexDirection: 'row',
-    marginTop: 36,
-    marginBottom: 42,
+    marginTop: 20,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 });

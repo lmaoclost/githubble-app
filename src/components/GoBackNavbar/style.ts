@@ -7,10 +7,9 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingHorizontal: 12,
   },
   button: {
-    padding: 12,
+    padding: 8,
     borderRadius: 5,
     alignItems: "center",
     justifyContent: "center",

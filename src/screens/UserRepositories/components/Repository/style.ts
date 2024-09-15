@@ -3,10 +3,10 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   repositoryContainer: {
-    backgroundColor: '#1C1C1E', // Cinza escuro
+    backgroundColor: '#1C1C1E',
     padding: 16,
     marginVertical: 8,
-    marginHorizontal: 16, // Espaçamento das laterais
+    marginHorizontal: 16,
     borderRadius: 8,
   },
   repoContent: {
@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   repoDescription: {
-    color: '#A9A9A9', // Cor de texto mais clara para a descrição
+    color: '#CCCCCC',
     fontSize: 14,
     marginTop: 4,
   },
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
   stargazersCount: {
     color: '#FFFFFF',
     fontSize: 14,
-    marginLeft: 4, // Espaçamento entre o ícone e o número
+    marginLeft: 4,
   },
   repoButton: {
     backgroundColor: '#31CF67',
