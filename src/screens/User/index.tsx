@@ -5,6 +5,7 @@ import { styles } from "./style";
 import { api } from "../../services/api";
 import { GoBackNavbar } from "../../components/GoBackNavbar";
 import { ImageModal } from "../../components/ImageModal"; // Importa o componente ImageModal
+import { handleOpenLink } from "../../utils/handleOpenLink";
 
 type RouteParams = {
   githubUser: {
@@ -45,10 +46,12 @@ export function User() {
         </TouchableOpacity>
         <View style={styles.infoContainer}>
           <Text style={styles.text}>{githubUser.name}</Text>
-          <Text style={styles.text}>@{githubUser.login}</Text>
+          <TouchableOpacity onPress={() => handleOpenLink(`http://github.com/${githubUser.login}`)}>
+            <Text style={styles.link}>@{githubUser.login}</Text>
+          </TouchableOpacity>
           <Text style={styles.text}>{githubUser.bio}</Text>
           <Text style={styles.text}>Empresa: {githubUser.company}</Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => handleOpenLink(githubUser.blog)}>
             <Text style={styles.link}>{githubUser.blog}</Text>
           </TouchableOpacity>
         </View>
