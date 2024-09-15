@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Text, Image, View, TouchableOpacity, Alert, Modal, TouchableWithoutFeedback, Keyboard } from "react-native";
+import { Text, Image, View, TouchableOpacity, Alert } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { styles } from "./style";
 import { api } from "../../services/api";
 import { GoBackNavbar } from "../../components/GoBackNavbar";
-import { X } from 'lucide-react-native';
+import { ImageModal } from "../../components/ImageModal"; // Importa o componente ImageModal
 
 type RouteParams = {
   githubUser: {
@@ -59,31 +59,11 @@ export function User() {
           <Text style={styles.buttonText}>Ver repositórios</Text>
         </TouchableOpacity>
 
-        <Modal
+        <ImageModal
           visible={modalVisible}
-          transparent={true}
-          animationType="fade"
-          onRequestClose={() => setModalVisible(false)}
-        >
-          <TouchableWithoutFeedback onPress={() => setModalVisible(false)}>
-            <View style={styles.modalContainer}>
-              <TouchableWithoutFeedback>
-                <View style={styles.modalContent}>
-                  <TouchableOpacity
-                    style={styles.closeButton}
-                    onPress={() => setModalVisible(false)}
-                  >
-                    <X size={24} color="white" />
-                  </TouchableOpacity>
-                  <Image
-                    style={styles.modalImage}
-                    source={{ uri: githubUser.avatar_url }}
-                  />
-                </View>
-              </TouchableWithoutFeedback>
-            </View>
-          </TouchableWithoutFeedback>
-        </Modal>
+          onClose={() => setModalVisible(false)}
+          imageUrl={githubUser.avatar_url}
+        />
       </View>
     </>
   );
