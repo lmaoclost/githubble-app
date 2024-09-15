@@ -28,7 +28,7 @@ export function User() {
   async function handleGithubUserRepoView() {
     try {
       const response = await api.get(`/users/${githubUser.login}/repos`);
-      navigation.navigate("userRepositories", { userRepositories: response.data });
+      navigation.navigate("userRepositories", { repositories: response.data });
     } catch (error) {
       Alert.alert("Ocorreu um problema, tente novamente");
     }

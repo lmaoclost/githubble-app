@@ -6,7 +6,7 @@ import { GoBackNavbar } from "../../components/GoBackNavbar";
 import { Repository } from "./components/Repository";
 
 type RouteParams = {
-  userRepositories: {
+  repositories: {
     id: number;
     name: string;
     description: string | null;
@@ -17,16 +17,16 @@ type RouteParams = {
 
 export function UserRepositories() {
   const route = useRoute();
-  const { userRepositories } = route.params as RouteParams;
+  const { repositories } = route.params as RouteParams;
 
   return (
     <>
       <GoBackNavbar />
       <View style={styles.container}>
         <View style={styles.infoContainer}>
-          {userRepositories && (
+          {repositories && (
             <FlatList
-              data={userRepositories}
+              data={repositories}
               renderItem={({ item }) => <Repository repository={item} />}
               keyExtractor={(repository) => repository.id.toString()}
             />
