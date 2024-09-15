@@ -7,7 +7,7 @@
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-191A1E">
   <a href="https://www.linkedin.com/in/renansmoliveira/">
-    <img alt="Follow me Linkedin" src="https://img.shields.io/badge/Follow%20up-your-linkedin-profile-191A1E?style=social&logo=linkedin">
+    <img alt="Follow me Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
 </p>
 
@@ -69,4 +69,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.c
 
 ---
 
-Feito com :heartpulse: por [Seu Nome](https://github.com/lmaoclost)
+Feito com :heartpulse: por [Renan Oliveira](https://github.com/lmaoclost)
