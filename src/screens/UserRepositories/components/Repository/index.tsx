@@ -1,6 +1,7 @@
-import { View, Text, TouchableOpacity, Linking } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { styles } from "./style";
 import { Star } from 'lucide-react-native';
+import { handleOpenLink } from "../../../../utils/handleOpenLink";
 
 type props = {
   repository: {
@@ -14,11 +15,6 @@ type props = {
 
 export function Repository(props: props) {
   const { repository } = props;
-
-  // Função para abrir o link do repositório
-  const handleOpenRepository = () => {
-    Linking.openURL(repository.html_url);
-  };
 
   return (
     <View style={styles.repositoryContainer}>
@@ -37,7 +33,7 @@ export function Repository(props: props) {
         </View>
       </View>
 
-      <TouchableOpacity style={styles.repoButton} onPress={handleOpenRepository}>
+      <TouchableOpacity style={styles.repoButton} onPress={() => handleOpenLink(repository.html_url)}>
         <Text style={styles.buttonText}>Acessar</Text>
       </TouchableOpacity>
     </View>
