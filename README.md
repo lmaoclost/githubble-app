@@ -7,7 +7,7 @@
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-191A1E">
   <a href="https://www.linkedin.com/in/renansmoliveira/">
-    <img alt="Follow me Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+    <img alt="Follow me Linkedin" src="https://img.shields.io/badge/Me%20siga-Linkedin-191A1E">
   </a>
 </p>
 
