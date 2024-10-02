@@ -11,6 +11,10 @@
   </a>
 </p>
 
+## Apresentação
+
+Link para [apresentação](https://www.canva.com/design/DAGScR9sgNI/gHqzjLDuZK9xFkBcEqUwFw/view)
+
 ## Sobre o projeto
 
 O **Githubble App** é uma aplicação móvel desenvolvida com React Native e Expo que permite aos usuários buscar e visualizar informações de perfis do GitHub. O projeto foi criado para demonstrar a integração com a API do GitHub.
