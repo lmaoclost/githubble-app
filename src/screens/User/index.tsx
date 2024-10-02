@@ -36,7 +36,6 @@ export function User() {
 
   return (
     <>
-      <GoBackNavbar />
       <View style={styles.container}>
         <TouchableOpacity onPress={() => setModalVisible(true)}>
           <Image

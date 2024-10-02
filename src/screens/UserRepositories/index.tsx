@@ -21,7 +21,6 @@ export function UserRepositories() {
 
   return (
     <>
-      <GoBackNavbar />
       <View style={styles.container}>
         <View style={styles.infoContainer}>
           {repositories && (
